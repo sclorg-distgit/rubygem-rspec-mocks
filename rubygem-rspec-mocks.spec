@@ -6,11 +6,11 @@
 %global	rpmminorver	.%(echo %preminorver | sed -e 's|^\\.\\.*||')
 %global	fullver	%{majorver}%{?preminorver}
 
-%global	fedorarel	2
+%global	fedorarel	3
 
 %global	gem_name	rspec-mocks
 
-%global	need_bootstrap_set	1
+%global	need_bootstrap_set	0
 
 Summary:	Rspec-2 doubles (mocks and stubs)
 Name:		%{?scl_prefix}rubygem-%{gem_name}
@@ -110,7 +110,7 @@ popd
 %{gem_docdir}
 
 %changelog
-* Mon Feb 22 2016 Pavel Valena <pvalena@redhat.com> - 3.4.1-2
+* Mon Feb 22 2016 Pavel Valena <pvalena@redhat.com> - 3.4.1-3
 - Update to 3.4.1
 
 * Fri Jan 16 2015 Josef Stribny <jstribny@redhat.com> - 2.14.5-2
